@@ -1,0 +1,10 @@
+{
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "allowJs": true,
+    "module": "ESNext",
+    "target": "ES6"
+  }
+}
