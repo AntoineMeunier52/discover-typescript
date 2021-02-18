@@ -1,4 +1,9 @@
-type Car = { brand: string; carName: string; age: number; option: string[]}
+type Car = {
+    brand: string;
+    carName: string;
+    age: number;
+    option: string[]
+}
 
 
 const car: Car = {

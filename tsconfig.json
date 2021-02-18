@@ -1,10 +1,12 @@
 {
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"],
+  "compileOnSave": true,
   "compilerOptions": {
     "outDir": "dist",
     "allowJs": true,
     "module": "ESNext",
-    "target": "ES6"
+    "target": "ES6",
+    "noEmitOnError": true,
   }
 }
