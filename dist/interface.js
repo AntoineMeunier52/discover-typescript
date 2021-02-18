@@ -17,3 +17,15 @@ const user2 = {
 //user2.firstName = 'oui';
 //on ne peut pas venir modifier cette valeur
 console.log(user2);
+const MyUserLog = {
+    firstName: 'rober',
+    nickName: 'lecomte',
+    age: 20,
+    password: 'qwerty',
+    Surname: 'berber',
+    hobbies: ['la biere', 'la mousse', 'le jack']
+};
+//autre facon de declarer une interface
+const MyOtherUser = {};
+MyOtherUser.Surname = "Quentin";
+console.log(MyOtherUser.Surname);

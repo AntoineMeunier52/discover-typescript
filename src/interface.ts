@@ -43,3 +43,33 @@ const user2: UserProfile = {
 
 
 console.log(user2)
+
+
+
+
+//permet de faire un heritage de interface a une autre
+interface UserLogin extends UserProfile {
+    password: string;
+    Surname: string;
+    hobbies?: Array<string>;
+}
+
+
+const MyUserLog : UserLogin = {
+    firstName: 'rober',
+    nickName: 'lecomte',
+    age: 20,
+    password: 'qwerty',
+    Surname: 'berber',
+    hobbies: ['la biere', 'la mousse', 'le jack']
+}
+
+
+
+//autre facon de declarer une interface
+
+const MyOtherUser = <UserLogin>{};
+
+MyOtherUser.Surname = "Quentin"
+
+console.log(MyOtherUser.Surname)
