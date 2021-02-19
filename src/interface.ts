@@ -52,6 +52,7 @@ interface UserLogin extends UserProfile {
     password: string;
     Surname: string;
     hobbies?: Array<string>;
+    //[]string
 }
 
 
@@ -73,3 +74,16 @@ const MyOtherUser = <UserLogin>{};
 MyOtherUser.Surname = "Quentin"
 
 console.log(MyOtherUser.Surname)
+
+
+//INTERFACE WITH FUNCTION
+
+interface Hello {
+    (name: string, age: number): void;
+}
+
+const sayHello : Hello = (name, age) => {
+    console.log(`bonjour ${name}, tu as ${age} ans`)
+}
+
+sayHello("Antoine", 20)

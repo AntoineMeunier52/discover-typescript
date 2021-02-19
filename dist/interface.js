@@ -29,3 +29,7 @@ const MyUserLog = {
 const MyOtherUser = {};
 MyOtherUser.Surname = "Quentin";
 console.log(MyOtherUser.Surname);
+const sayHello = (name, age) => {
+    console.log(`bonjour ${name}, tu as ${age} ans`);
+};
+sayHello("Antoine", 20);
